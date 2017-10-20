@@ -1,0 +1,14 @@
+<% @post_array.each do |post| %>
+
+<div class="postContainer">
+  <h3><a href="/<%= post['id']%>"><%= post['name'] %></a></h3>
+  <p><%= "#{post['body'][0..60]}..." %></p>
+  <form action="/<%=post['id']%>/delete" method="post">
+    <input type="submit" value="Delete">
+  </form>
+  <form action="/<%=post['id']%>/edit" method="get">
+    <input type="submit" value="Edit">
+  </form>
+</div>
+
+<% end %>

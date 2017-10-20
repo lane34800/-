@@ -1,0 +1,10 @@
+<!-- WRITE YOUR CODE HERE -->
+<% @movie_array.each do |movie| %>
+
+<h2><%= movie['title'] %></h2>
+<p>Actors: <%= movie['actors'] %></p>
+<img src="<%= movie['poster'] %>">
+<form action="/delete/<%=movie['id']%>&<%=movie['title']%>" method="post">
+  <input type="submit" value="delete">
+</form>
+<% end %>

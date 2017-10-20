@@ -1,0 +1,7 @@
+<div class="postContainer">
+  <form action="/<%=@post['id']%>" method="post">
+    <input type="text-box" name="post_title" size="53" value="<%=@post['name']%>">
+    <textarea name="post_body" rows="10" cols="52"><%=@post['body']%></textarea>
+    <input type="submit" value="Resubmit">
+  </form>
+</div>

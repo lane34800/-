@@ -1,0 +1,25 @@
+<form action="/products/<%=@product["id"]%>/edit" method="post">
+  
+  <label for="name">Name:</label>
+  <br>
+  <input type="text" name="name" value="<%= @product["name"] %>">
+  
+  <br><br>
+
+  <label for="number">Price:</label>
+  <br>
+  <input type="number" name="price" value="<%= @product["price"] %>">
+  
+  <br><br>
+
+  <label for="description">Description:</label>
+  <br>
+  <textarea name="description" cols="30" rows="10"><%= @product["description"] %></textarea>
+  
+  <br><br>
+
+  <input type="submit" value="Save">
+
+  <input type="hidden" name="_method" value="PUT">
+
+</form>

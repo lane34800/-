@@ -1,0 +1,69 @@
+/* Style for the div that creates the blurred background
+Point of the blurred background is to get a full-size image
+from a small resolution (and size) source. */
+.background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-color: dodgerblue;
+  background: url("https://unsplash.it/500/300?image=501") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.mainContainer {
+  overflow: auto;
+  max-width: 700px;
+  margin: 50px auto;
+  background: #2980b9;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px 10px rgba(0,0,0,0.2);
+}
+
+.mainContainer p {
+  font-size: 24px;
+  overflow: auto;
+  margin: 30px auto;
+  padding: 10px;
+  width: 90%;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #ecf0f1;
+  box-shadow: 0 0 25px 10px rgba(0,0,0,0.1);
+}
+
+.formContainer {
+  margin: 30px auto;
+  width: 75%;
+}
+
+.formContainer [type="text"] {
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 75%;
+  border: none;
+  border-radius: 5px;
+  background-color: #ecf0f1;
+  box-shadow: 0 0 25px 10px rgba(0,0,0,0.1);
+}
+
+.formContainer [type="submit"] {
+  margin-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ecf0f1;
+  box-shadow: 0 0 25px 10px rgba(0,0,0,0.1);
+}

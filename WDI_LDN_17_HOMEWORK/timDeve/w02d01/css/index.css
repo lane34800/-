@@ -1,0 +1,51 @@
+body {
+  background-color: #32465a;
+  background: url("../img/daft-punk-22017-1920x1080.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-repeat: none;
+  font-family: sans-serif;
+  color: white;
+}
+
+textarea, input {
+  outline: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 54px;
+}
+
+.button {
+  box-shadow: 0 0 25px 5px rgba(0,0,0,0) inset;
+  transition: box-shadow, 0.5s;
+  background:none;
+  border-radius: 20px;
+  border: 0px solid;
+  display: inline-block;
+  margin:5px;
+  width: 70px;
+  height: 70px;
+  border: solid 2px white;
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase; 
+}
+#mainContainer {
+  width: 520px;
+  margin: 150px auto 0 auto;
+}
+
+#row2 {
+  margin-left: 10px;
+}
+#row3 {
+  margin-left: 40px;
+}
+.button:hover {
+  box-shadow: 0 0 25px 5px rgba(255,255,255,1) inset;
+}
+
+.highlight {
+  box-shadow: 0 0 25px 5px rgba(255,255,255,1) inset;
+}

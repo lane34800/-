@@ -1,0 +1,38 @@
+body {
+  background: dodgerblue;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  color: white;
+}
+
+@keyframes example {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.container {
+  animation: example 5s infinite linear;
+}
+
+.wheel {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  background-image: url("http://i.huffpost.com/gen/2714370/images/o-POOP-EMOJI-ICE-CREAM-facebook.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 20px;
+  margin: 100px;
+  animation: example 5s infinite linear;
+}
+
+#second {
+  color: red;
+}

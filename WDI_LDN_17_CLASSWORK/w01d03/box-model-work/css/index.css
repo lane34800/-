@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 500px;
+  width: 500px;
+  background-color: grey;
+  border:5px double;
+}
+
+#square1 {
+  background-color: dodgerblue;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+#square2 {
+  background-color: tomato;
+  height: 100px;
+  width: 100px;
+}
+
+#square3 {
+  background-color: pink;
+  height: 100px;
+  width: 100px;
+}
+
+#square4 {
+  background-color: #340539;
+  height: 100px;
+  width: 100px;
+}

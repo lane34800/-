@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Twitter</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="./js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="./js/moment-with-locales.js"></script>
+  <script type="text/javascript" src="./js/tweets.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>  
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>jQuery Twitter</h1>
+    </nav>
+  </header>
+  <div id="timeline">
+    <div class="timeline-tweet-box">
+      <div class="home-tweet-box">
+        <img id="thumbnail" src="http://www.placecage.com/50/50" alt="User image goes here.">
+        <form id="new-tweet-form">
+          <textarea id="new-tweet-input"></textarea>
+          <div class="actions">
+            <input type="submit" id="submit" value="Tweet">
+            <span class="tweet-counter">140</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="stream-container">
+      <div id="new-tweets-bar">
+        View <span>1</span> new Tweets
+      </div>
+      <div class="stream">
+        <ol class="stream-items">
+          <!-- <li class="stream-item">
+            <div class="tweet">
+              <a href="#">
+                <img src="" alt="User image goes here.">
+              </a>
+              <div class="content">
+                <strong class="fullname">Username</strong>
+                <span>&rlm;</span>
+                <span>@</span><b>username</b>
+                &nbsp;&middot;&nbsp;
+                <small class="time">
+                  11m
+                </small>
+                <p>asdasdasdasdsadasdasknoldvnfdbvafvoneovneoirnvoernvaenrovaenovaneroivnaeoirnvoiaervoienriovaenrivaeoirvnaeornvoaerioveriovervneoirvaevoervvv</p>
+              </div>
+            </div>
+          </li> -->
+        </ol>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

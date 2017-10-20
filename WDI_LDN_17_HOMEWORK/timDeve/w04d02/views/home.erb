@@ -1,0 +1,12 @@
+<%# Get the phrase to be translated %>
+<div class="formContainer">
+  <form action="/" method="post">
+
+    <input type="text" name="phrase">
+    <input type="submit" value="Translate" >
+    
+  </form>
+</div>
+
+<%# output the translated phrase %>
+<p class="answer"><%= @phrase %></p>
